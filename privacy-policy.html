@@ -1,0 +1,35 @@
+from pathlib import Path
+
+# Create a basic privacy policy HTML content
+privacy_policy_html = """
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy</title>
+</head>
+<body>
+    <h1>Privacy Policy</h1>
+    <p>
+        Fact-O-Pedia does not collect, store, or share any personal user data.
+        The app uses internet access to fetch fact-check information from public APIs.
+        Voice and image search features use on-device capabilities or third-party APIs
+        strictly for the purpose of searching and do not store user inputs.
+    </p>
+    <p>
+        We are committed to protecting your privacy and ensuring transparency about how we handle any data.
+        No personal information is sold or shared with third parties.
+    </p>
+    <p>
+        If you have any questions or concerns about this privacy policy, please contact us through our official channels.
+    </p>
+</body>
+</html>
+"""
+
+# Save the file to a downloadable location
+file_path = Path("/mnt/data/privacy-policy.html")
+file_path.write_text(privacy_policy_html)
+
+file_path.name
