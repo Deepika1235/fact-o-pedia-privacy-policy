@@ -1,35 +1,39 @@
-from pathlib import Path
-
-# Create a basic privacy policy HTML content
-privacy_policy_html = """
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy</title>
 </head>
 <body>
     <h1>Privacy Policy</h1>
-    <p>
-        Fact-O-Pedia does not collect, store, or share any personal user data.
-        The app uses internet access to fetch fact-check information from public APIs.
-        Voice and image search features use on-device capabilities or third-party APIs
-        strictly for the purpose of searching and do not store user inputs.
-    </p>
-    <p>
-        We are committed to protecting your privacy and ensuring transparency about how we handle any data.
-        No personal information is sold or shared with third parties.
-    </p>
-    <p>
-        If you have any questions or concerns about this privacy policy, please contact us through our official channels.
-    </p>
+
+    <p>This privacy policy explains how the Fact-O-Pedia app handles user data and information.</p>
+
+    <h2>1. Data Collection</h2>
+    <p>Fact-O-Pedia does not collect or store any personal information such as name, email, phone number, or location.</p>
+
+    <h2>2. Permissions</h2>
+    <p>The app may request access to the following:</p>
+    <ul>
+        <li><strong>Camera:</strong> For image-based fact checking using OCR (Optical Character Recognition).</li>
+        <li><strong>Microphone:</strong> For voice-based search queries.</li>
+        <li><strong>Internet:</strong> To fetch fact-checking data and verify news from public APIs.</li>
+    </ul>
+
+    <h2>3. Third-Party Services</h2>
+    <p>Fact-O-Pedia may use third-party services like Firebase, Google APIs, and machine learning libraries to enhance functionality. These services may collect limited usage data in accordance with their own privacy policies.</p>
+
+    <h2>4. Children's Privacy</h2>
+    <p>Our app is not specifically directed to children under the age of 13. We do not knowingly collect data from children.</p>
+
+    <h2>5. Security</h2>
+    <p>We prioritize your privacy and do not store or transmit personal data. All processing is done locally or via secure, trusted APIs.</p>
+
+    <h2>6. Changes to This Policy</h2>
+    <p>This privacy policy may be updated in the future. Any changes will be posted on this page.</p>
+
+    <h2>7. Contact</h2>
+    <p>If you have any questions about this policy, please contact us at: <strong>deepika1235@gmail.com</strong></p>
+
 </body>
 </html>
-"""
-
-# Save the file to a downloadable location
-file_path = Path("/mnt/data/privacy-policy.html")
-file_path.write_text(privacy_policy_html)
-
-file_path.name
